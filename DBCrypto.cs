@@ -33,9 +33,7 @@ namespace DoDBCrypto
         }
         public static string PwdHashEncrypt(string plainText, string key, string iv)
         {
-
-            return HashSha256(plainText);
-
+            return HashSha256( key + plainText + iv);
         }
 
         private static string HashSha256(string content, int stringType = 0)
