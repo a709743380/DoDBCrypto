@@ -30,9 +30,9 @@ GO
 Create ASSEMBLY clr_DoDBCrypto--（clr_DoDBCrypto 建立的名稱）
 FROM 'path\DoDBCrypto\bin\Debug\DoDBCrypto.dll'
 WITH PERMISSION_SET = UNSAFE;
+--可能有當前角色對DBO的database權限問題
 GO
 ```
-/*
 ``` sql
 --移除注入的dll 
 DROP ASSEMBLY clr_DoDBCrypto;
@@ -48,7 +48,6 @@ WITH PERMISSION_SET = UNSAFE;
 --查詢clr
 SELECT  *
 FROM  sys.assemblies;
-*/
 ```
 ``` sql
 --建立純量函數
