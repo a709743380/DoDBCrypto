@@ -1,7 +1,10 @@
 "# DoDBCrypto" 
 
-一個使用.NET 4.8的一類別庫（.dll）
-
+一個使用.NET 4.8的類別庫（.dll）
+(
+類別庫 (.NET Framework))
+建立C# 類別庫(.dll)的專案
+)
 內建立有AES加解密
 
 利用C# Function  註冊到MSsql
